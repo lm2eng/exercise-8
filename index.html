@@ -2,6 +2,10 @@
 <html lang="eng-ca">
   <head>
     <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width,inital-scale=1.0"
+      >
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
     <style>
@@ -14,7 +18,33 @@
       /* Responsive Design Additions */
 
       /*your CSS will go here*/
-
+      
+      /* Mobile View */
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: #F0E68C;
+          font-size: 0.75em;
+        }
+        
+        img {
+          width: 100%;
+        }
+      }
+      
+      /* Desktop View */
+      @media screen and (min-width: 601px) {
+        background-color: #F0E68C;
+        
+        img {
+          width: 800px;
+        }
+        
+        p {
+          width: 600px;
+        }
+      }
+      
+      
       /* misc. styling */
 
       ul a {
@@ -65,7 +95,7 @@
       padding: .375em;
       margin-top: 0;
       margin-bottom: 0;
-      }
+      }      
     </style>
   </head>
   <body>
